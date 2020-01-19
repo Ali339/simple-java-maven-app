@@ -19,7 +19,7 @@ pipeline {
         stage ('build') {
             steps {
                 sh  '''
-                mvn -Dskiptests clean package
+                ./scripts/build.sh
                    '''
             }
         }
