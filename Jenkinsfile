@@ -19,7 +19,7 @@ pipeline {
         stage ('build') {
             steps {
                 sh  '''
-                ./scripts/build.sh
+                echo "building"
                    '''
             }
         }
