@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker {image 'maven:3.3-jdk-8'}} 
+    agent { docker {image maven}} 
     
     
     
@@ -19,7 +19,7 @@ pipeline {
         stage ('build') {
             steps {
                 sh  '''
-                ./scripts/build.sh
+                echo building
                    '''
             }
         }
