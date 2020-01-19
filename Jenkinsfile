@@ -19,9 +19,8 @@ pipeline {
         stage ('build') {
             steps {
                 sh  '''
-                mvn -B -DskipTests clean package"
-                
-                    '''
+                echo "building"
+                   '''
             }
         }
         stage ('test') {
