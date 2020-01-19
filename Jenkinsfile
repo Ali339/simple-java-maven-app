@@ -19,7 +19,7 @@ pipeline {
         stage ('build') {
             steps {
                 sh  '''
-                echo "building"
+                mvn -Dskiptests build 
                    '''
             }
         }
